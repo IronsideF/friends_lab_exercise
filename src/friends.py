@@ -43,10 +43,8 @@ def find_no_friends(people):
         if person["friends"] == []:
             return [person]
 
-def unique_favourite_tv_shows(people):
+def unique_favourite_tv_shows_manual(people):
     tv_shows = []
-    # for person in people:
-    #     tv_shows += person["favourites"]["tv_show"]
     for person in people:
         is_duplicate = False
         for show in tv_shows:
@@ -57,3 +55,10 @@ def unique_favourite_tv_shows(people):
         else:
             pass
     return tv_shows
+
+def unique_favourite_tv_shows(people):
+    unique_tv_list =[]
+    for person in people:
+        if person["favourites"]["tv_show"] not in unique_tv_list:
+            unique_tv_list.append(person["favourites"]["tv_show"])
+    return unique_tv_list
