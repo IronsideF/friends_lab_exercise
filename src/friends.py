@@ -7,5 +7,10 @@ def get_favourite_tv_show(person):
 def likes_to_eat(person, food):
     snacks = person["favourites"]["snacks"]
     for snack in snacks:
+        is_favourite = False
         if snack == food:
-            return True
+            is_favourite = True
+            break
+    return is_favourite
+    
+
