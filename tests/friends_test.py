@@ -108,7 +108,7 @@ class TestFriends(unittest.TestCase):
 
   # 6. Find the total of everyone's money
   # (hint: use the self.people list, remember how we checked the total number of eggs yesterday?)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_total_money(self):
     self.assertEqual(143, total_money(self.people))
 

@@ -20,3 +20,10 @@ def add_friend(person, friend):
 def remove_friend(person, friend):
     friend_list = person["friends"]
     friend_list.remove(friend)
+
+def total_money(person_list):
+    total = 0
+    for person in person_list:
+        total += person["monies"]
+    return total
+
