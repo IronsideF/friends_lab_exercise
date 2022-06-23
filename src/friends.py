@@ -12,5 +12,8 @@ def likes_to_eat(person, food):
             is_favourite = True
             break
     return is_favourite
-    
+
+def add_friend(person, friend):
+    friend_list = person["friends"]
+    friend_list.append(friend)
 
